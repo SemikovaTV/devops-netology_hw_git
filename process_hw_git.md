@@ -16,7 +16,7 @@
 6. Произведите первоначальную настройку Git, указав своё настоящее имя, чтобы нам было проще общаться, и email (`git config --global user.name` и `git config --global user.email johndoe@example.com`). 
 7. Выполните команду `git status` и запомните результат.
  
-   ![Alt text](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/1.jpg)
+ ![Alt text](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/1.jpg)
 
 8. Отредактируйте файл `README.md` любым удобным способом, тем самым переведя файл в состояние `Modified`.
 9. Ещё раз выполните `git status` и продолжайте проверять вывод этой команды после каждого следующего шага. 
@@ -31,6 +31,8 @@
 14. Теперь можно сделать коммит `git commit -m 'First commit'`.
 15. И ещё раз посмотреть выводы команд `git status`, `git diff` и `git diff --staged`.
 
+![Alt text](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/4.jpg)
+
 
 
 ### Создание файлов `.gitignore` и второго коммита
@@ -41,6 +43,8 @@
 1. В файле `README.md` опишите своими словами, какие файлы будут проигнорированы в будущем благодаря добавленному `.gitignore`.
 1. Закоммитьте все новые и изменённые файлы. Комментарий к коммиту должен быть `Added gitignore`.
 
+![Alt text](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/5.jpg)
+
 ### Эксперимент с удалением и перемещением файлов (третий и четвёртый коммит)
 
 1. Создайте файлы `will_be_deleted.txt` (с текстом `will_be_deleted`) и `will_be_moved.txt` (с текстом `will_be_moved`) и закоммите их с комментарием `Prepare to delete and move`.
@@ -48,6 +52,9 @@
 1. Удалите файл `will_be_deleted.txt` с диска и из репозитория. 
 1. Переименуйте (переместите) файл `will_be_moved.txt` на диске и в репозитории, чтобы он стал называться `has_been_moved.txt`.
 1. Закоммитьте результат работы с комментарием `Moved and deleted`.
+
+ ![Alt text](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/6.jpg)
+ ![Alt text](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/7.jpg)
 
 ### Проверка изменения
 
@@ -59,10 +66,14 @@
     * `Moved and deleted` — после удаления и перемещения временных файлов. 
 2. Проверьте это, используя комманду `git log`. Подробно о формате вывода этой команды мы поговорим на следующем занятии, но посмотреть, что она отображает, можно уже сейчас.
 
+ ![Alt text](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/8.jpg)
+
 ### Отправка изменений в репозиторий
 
 Выполните команду `git push`, если Git запросит логин и пароль — введите ваши логин и пароль от GitHub. 
 
 В качестве результата отправьте ссылку на репозиторий. 
+
+ ![Alt text](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/9.jpg)
 
 ----
