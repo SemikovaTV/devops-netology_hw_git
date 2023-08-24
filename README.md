@@ -12,3 +12,4 @@ terraform.gitignore:
 
 
 
+redact readme
