@@ -2,8 +2,8 @@
 ### GitLab
 
 Ссылки на репозитории:
-Github - 
-Gitlab - 
+Github - https://github.com/SemikovaTV/devops-netology_hw_git
+Gitlab - https://gitlab.com/devops-netology9320934/devops-netology
 
 Создадим аккаунт в GitLab, если у вас его ещё нет:
 
