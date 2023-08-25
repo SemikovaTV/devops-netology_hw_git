@@ -26,7 +26,8 @@ https://gitlab.com/YOUR_LOGIN/devops-netology. Изучите предлагае
 1. Отправьте изменения в новый удалённый репозиторий `git push -u gitlab main`.
 1. Обратите внимание, как изменился результат работы команды `git remote -v`.
 
-![ad]
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img/2.jpg)
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img/3.jpg)
 
 ## Задание 2. Теги
 
@@ -39,6 +40,9 @@ https://gitlab.com/YOUR_LOGIN/devops-netology. Изучите предлагае
     * в GitHub — https://github.com/YOUR_ACCOUNT/devops-netology/releases;
     * в GitLab — https://gitlab.com/YOUR_ACCOUNT/devops-netology/-/tags;
     * в Bitbucket — список тегов расположен в выпадающем меню веток на отдельной вкладке. 
+
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img/9.jpg)
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img/10.jpg)
 
 ## Задание 3. Ветки 
 
@@ -54,6 +58,12 @@ https://gitlab.com/YOUR_LOGIN/devops-netology. Изучите предлагае
 1. Отправьте изменения в репозиторий и посмотрите, как изменится схема на странице https://github.com/YOUR_ACCOUNT/devops-netology/network 
 и как изменится вывод команды `git log`.
 
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img/11.jpg)
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img/12.jpg)
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img/13.jpg)
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img/13.1.jpg)
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img/14.jpg)
+
 ## Задание 4. Упрощаем себе жизнь
 
 Попробуем поработь с Git при помощи визуального редактора. 
@@ -62,4 +72,9 @@ https://gitlab.com/YOUR_LOGIN/devops-netology. Изучите предлагае
 1. Измените какой-нибудь файл, и он сразу появится на вкладке `Local Changes`, отсюда можно выполнить коммит, нажав на кнопку внизу этого диалога. 
 1. Элементы управления для работы с Git будут выглядеть примерно так:  
 1. Попробуйте выполнить пару коммитов, используя IDE. 
+
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img/16.jpg)
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img/17.jpg)
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img/18.jpg)
+
 
