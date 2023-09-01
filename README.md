@@ -1,6 +1,8 @@
 second modify
 third modify
 
+modify by pycharm
+
 terraform.gitignore:
 
 будет проигнорирована локальная дирректория .terraform
