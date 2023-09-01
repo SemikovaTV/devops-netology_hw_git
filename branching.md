@@ -1,24 +1,6 @@
-# Домашнее задание к занятию «Ветвления в Git»
+# Домашнее задание к занятию «Ветвления в Git» - Семикова Т.В. FOPS-9
 
-### Цель задания
-
-В процессе работы над заданием вы потренеруетесь делать merge и rebase. В результате вы поймете разницу между ними и научитесь решать конфликты.   
-
-Обычно при нормальном ходе разработки выполнять `rebase` достаточно просто. 
-Это позволяет объединить множество промежуточных коммитов при решении задачи, чтобы не засорять историю. Поэтому многие команды и разработчики предпочитают такой способ.   
-
-
-### Инструкция к заданию
-
-1. В личном кабинете отправьте на проверку ссылку на network графика вашего репозитория.
-2. Любые вопросы по решению задач задавайте в чате учебной группы.
-
-
-### Дополнительные материалы для выполнения задания
-
-1. Тренажёр [LearnGitBranching](https://learngitbranching.js.org/), где можно потренироваться в работе с деревом коммитов и ветвлений. 
-
-------
+Ссылка на network: https://github.com/SemikovaTV/devops-netology_hw_git/network
 
 ## Задание «Ветвление, merge и rebase»  
 
@@ -38,10 +20,11 @@ for param in "$*"; do
     count=$(( $count + 1 ))
 done
 ```
-
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img_branching/1.jpg)
 Этот скрипт отображает на экране все параметры одной строкой, а не разделяет их.
 
 **Шаг 2.** Создадим коммит с описанием `prepare for merge and rebase` и отправим его в ветку main. 
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img_branching/2.jpg)
 
 #### Подготовка файла merge.sh 
  
@@ -61,6 +44,9 @@ done
 ```
 
 **Шаг 3.** Создайте коммит `merge: @ instead *`, отправьте изменения в репозиторий.  
+
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img_branching/3.jpg)
+
 **Шаг 4.** Разработчик подумал и решил внести ещё одно изменение в `merge.sh`:
  
 ```bash
@@ -78,6 +64,8 @@ done
 Теперь скрипт будет отображать каждый переданный ему параметр отдельно. 
 
 **Шаг 5.** Создайте коммит `merge: use shift` и отправьте изменения в репозиторий. 
+
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img_branching/5.jpg)
 
 #### Изменим main  
 
@@ -102,12 +90,17 @@ echo "====="
 
 **Шаг 3.** Отправляем изменённую ветку `main` в репозиторий.
 
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img_branching/6.jpg)
+
 #### Подготовка файла rebase.sh  
 
 **Шаг 1.** Предположим, что теперь другой участник нашей команды не сделал `git pull` либо просто хотел ответвиться не от последнего коммита в `main`, а от коммита, когда мы только создали два файла
 `merge.sh` и `rebase.sh` на первом шаге.  
 Для этого при помощи команды `git log` найдём хеш коммита `prepare for merge and rebase` и выполним `git checkout` на него так:
 `git checkout 8baf217e80ef17ff577883fda90f6487f67bbcea` (хеш будет другой).
+
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img_branching/7.jpg)
+
 **Шаг 2.** Создадим ветку `git-rebase`, основываясь на текущем коммите. 
 **Шаг 3.** И изменим содержимое файла `rebase.sh` на следующее, тоже починив скрипт, но немного в другом стиле:
 
@@ -128,16 +121,7 @@ echo "====="
 
 **Шаг 5.** И сделаем ещё один коммит `git-rebase 2` с пушем, заменив `echo "Parameter: $param"` на `echo "Next parameter: $param"`.
 
-#### Промежуточный итог  
-
-Мы сэмулировали типичную ситуации в разработке кода, когда команда разработчиков работала над одним и тем же участком кода, и кто-то из разработчиков 
-предпочитает делать `merge`, а кто-то — `rebase`. Конфликты с merge обычно решаются просто, 
-а с rebase бывают сложности, поэтому давайте смержим все наработки в `main` и разрешим конфликты. 
-
-Если всё было сделано правильно, то на странице `network` в GitHub, находящейся по адресу 
-`https://github.com/ВАШ_ЛОГИН/ВАШ_РЕПОЗИТОРИЙ/network`, будет примерно такая схема:
-  
-![Созданы обе ветки](img/01.png)
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img_branching/8.jpg)
 
 #### Merge
 
@@ -156,9 +140,9 @@ Writing objects: 100% (1/1), 223 bytes | 223.00 KiB/s, done.
 Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
 ```  
 
-В результате получаем такую схему:
-  
-![Первый мерж](img/02.png)
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img_branching/9.jpg)  
+
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img_branching/10.jpg)
 
 #### Rebase
 
@@ -229,6 +213,7 @@ Merge branch 'git-merge'
 ```
 Successfully rebased and updated refs/heads/git-rebase
 ```
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img_branching/11.jpg)
 
 **Шаг 7.** И попробуем выполнить `git push` либо `git push -u origin git-rebase`, чтобы точно указать, что и куда мы хотим запушить. 
 
@@ -262,6 +247,7 @@ To github.com:andrey-borue/devops-netology.git
  + 1829df1...e3b942b git-rebase -> git-rebase (forced update)
 Branch 'git-rebase' set up to track remote branch 'git-rebase' from 'origin'.
 ```
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img_branching/12.jpg)
 
 **Шаг 9**. Теперь можно смержить ветку `git-rebase` в main без конфликтов и без дополнительного мерж-комита простой перемоткой: 
 
@@ -276,25 +262,6 @@ Fast-forward
  branching/rebase.sh | 3 +--
  1 file changed, 1 insertion(+), 2 deletions(-)
 ```
+![ad](https://github.com/SemikovaTV/devops-netology_hw_git/blob/main/img_branching/13.jpg)
 
 *В качестве результата работы по всем заданиям приложите ссылку на .md-файл в вашем репозитории.*
- 
-----
-
-### Правила приёма домашнего задания
-
-В личном кабинете отправлена ссылка на network графика вашего репозитория.
-
-### Критерии оценки
-
-Зачёт:
-
-* выполнены все задания;
-* ответы даны в развёрнутой форме;
-* приложены соответствующие скриншоты и файлы проекта;
-* в выполненных заданиях нет противоречий и нарушения логики.
-
-На доработку:
-
-* задание выполнено частично или не выполнено вообще;
-* в логике выполнения заданий есть противоречия и существенные недостатки.
